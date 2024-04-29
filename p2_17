@@ -1,0 +1,36 @@
+public class Main {
+    public static void main(String[] args) {
+          system.out.println("memdavadi riddhi , 220130318035")'
+        // Creating an instance of TemperatureConverter class
+        TemperatureConverter temperatureConverter = new TemperatureConverter();
+        double fahrenheit = 98.6;
+        double celsius = temperatureConverter.fahrenheitToCelsius(fahrenheit);
+        System.out.println(fahrenheit + " Fahrenheit is equal to " + celsius + " Celsius.");
+
+        celsius = 37;
+        fahrenheit = temperatureConverter.celsiusToFahrenheit(celsius);
+        System.out.println(celsius + " Celsius is equal to " + fahrenheit + " Fahrenheit.");
+
+        // Creating an instance of Calculator class
+        Calculator calculator = new Calculator();
+        int num1 = 10;
+        int num2 = 5;
+        System.out.println("Sum: " + calculator.add(num1, num2));
+        System.out.println("Difference: " + calculator.subtract(num1, num2));
+        System.out.println("Product: " + calculator.multiply(num1, num2));
+        System.out.println("Quotient: " + calculator.divide(num1, num2));
+
+        // Creating an instance of Person class
+        Person person = new Person("John", 30, "123 Main Street");
+        person.introduce();
+
+        // Creating an instance of WrapperDemo class
+        WrapperDemo wrapperDemo = new WrapperDemo();
+        int num = 10;
+        Integer wrappedNum = Integer.valueOf(num);
+        System.out.println("Wrapped value: " + wrappedNum);
+        String str = "20";
+        int parsedValue = Integer.parseInt(str);
+        System.out.println("Parsed value: " + parsedValue);
+    }
+}
