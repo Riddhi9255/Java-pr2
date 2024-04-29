@@ -1,0 +1,46 @@
+public class Account {
+    private String depositorName;
+    private String accountNumber;
+    private String accountType;
+    private double balance;
+
+    // Constructor to initialize account details
+    public Account(String depositorName, String accountNumber, String accountType, double initialBalance) {
+        this.depositorName = depositorName;
+        this.accountNumber = accountNumber;
+        this.accountType = accountType;
+        if (initialBalance >= 1000) {
+            this.balance = initialBalance;
+            System.out.println("Initial balance set successfully.");
+        } else {
+            System.out.println("Initial balance must be at least 1000 Rp.");
+        }
+    }
+
+    // Method to deposit an amount
+    public void deposit(double amount) {
+        if (amount > 0) {
+            this.balance += amount;
+            System.out.println(amount + " Rp deposited successfully.");
+        } else {
+            System.out.println("Deposit amount must be greater than 0.");
+        }
+    }
+
+    // Method to display name and balance
+    public void displayDetails() {
+        System.out.println("Depositor Name: " + this.depositorName);
+        System.out.println("Current Balance: " + this.balance + " Rp");
+    }
+
+    public static void main(String[] args) {
+        // Creating an account object
+        Account account = new Account("John Doe", "123456789", "Savings", 1500);
+
+        // Depositing some amount
+        account.deposit(500);
+
+        // Displaying account details
+        account.displayDetails();
+    }
+}
