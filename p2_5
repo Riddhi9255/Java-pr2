@@ -1,0 +1,37 @@
+public class Person {
+    private String name;
+    private int age;
+
+    // Constructor with parameters
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Method to display details of the person
+    public void displayDetails() {
+        System.out.println("Name: " + this.name);
+        System.out.println("Age: " + this.age);
+    }
+
+    // Method to update age using 'this' keyword
+    public void updateAge(int age) {
+        this.age = age;
+    }
+
+    public static void main(String[] args) {
+        // Creating an instance of Person class
+        Person person = new Person("John", 30);
+        system.out.println("memdavadi riddhi 220130318035");
+        // Displaying initial details
+        System.out.println("Initial Details:");
+        person.displayDetails();
+
+        // Updating age
+        person.updateAge(35);
+
+        // Displaying updated details
+        System.out.println("\nDetails after updating age:");
+        person.displayDetails();
+    }
+}
