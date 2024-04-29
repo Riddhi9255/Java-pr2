@@ -1,0 +1,13 @@
+public class MathOperations {
+    public static int square(int number) {
+        return number * number;
+    }
+
+    public static void main(String[] args) {
+        int num = 5;
+        int result = square(num);
+        String enrollNumber = "2201030318035";
+        String name = "Memdavadi Riddhi";
+        System.out.println("Enroll: " + enrollNumber + ", Name: " + name + ", Square of " + num + " is: " + result);
+    }
+}
