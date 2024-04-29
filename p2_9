@@ -1,0 +1,48 @@
+public class Person {
+    private String name;
+    private int age;
+
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Copy constructor
+    public Person(Person other) {
+        this.name = other.name;
+        this.age = other.age;
+    }
+
+    // Method to display details
+    public void displayDetails() {
+        System.out.println("Name: " + this.name);
+        System.out.println("Age: " + this.age);
+    }
+
+    public static void main(String[] args) {
+        // Creating an object using constructor
+        Person person1 = new Person("John", 30);
+        system.out.println("memdavadi riddhi , 220130318035");
+        // Displaying details of person1
+        System.out.println("Details of person1:");
+        person1.displayDetails();
+
+        // Creating a copy of person1 using copy constructor
+        Person person2 = new Person(person1);
+
+        // Displaying details of person2 (copy of person1)
+        System.out.println("\nDetails of person2 (copy of person1):");
+        person2.displayDetails();
+
+        // Modifying person1
+        person1.name = "Alice";
+        person1.age = 25;
+
+        // Displaying details of both person1 and person2 after modification
+        System.out.println("\nDetails of person1 after modification:");
+        person1.displayDetails();
+        System.out.println("\nDetails of person2 after modification:");
+        person2.displayDetails();
+    }
+}
