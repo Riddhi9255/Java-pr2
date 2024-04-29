@@ -1,0 +1,55 @@
+public class Person {
+    private String name;
+    private int age;
+    private String address;
+
+    // Constructor to initialize name, age, and address attributes
+    public Person(String name, int age, String address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
+    // Getter and setter methods for name attribute
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter and setter methods for age attribute
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    // Getter and setter methods for address attribute
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    // Method to introduce the person
+    public void introduce() {
+        System.out.println("memdavadi riddhi , 220130318035");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Address: " + address);
+    }
+
+    public static void main(String[] args) {
+        // Creating an instance of Person
+        Person person = new Person("John", 30, "123 Main Street");
+
+        // Calling the introduce method to print out the person's introduction message
+        person.introduce();
+    }
+}
