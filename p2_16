@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class UserInputDemo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+          System.out.print("memdavadi riddhi",220130318035");
+        // Get user input for name, age, and favorite color
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
+        scanner.nextLine(); // Consume the newline character left by nextInt()
+
+        System.out.print("Enter your favorite color: ");
+        String favoriteColor = scanner.nextLine();
+
+        // Format and print out the message
+        String message = String.format("Hello %s, you are %d years old and your favorite color is %s.", name, age, favoriteColor);
+        System.out.println(message);
+
+        // Close the scanner
+        scanner.close();
+    }
+}
